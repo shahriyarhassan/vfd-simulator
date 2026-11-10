@@ -1,0 +1,261 @@
+:root {
+  color-scheme: dark;
+  font-family: Arial, sans-serif;
+  background: #080d12;
+  color: #edf4f8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding: 32px 16px;
+  background:
+    radial-gradient(circle at top left, #073344 0, transparent 38rem),
+    radial-gradient(circle at bottom right, #38112f 0, transparent 35rem),
+    #080d12;
+}
+
+main {
+  width: min(760px, 100%);
+  margin: 0 auto;
+  padding: 32px;
+  border: 1px solid #263643;
+  border-radius: 18px;
+  background: rgb(17 22 29 / 94%);
+  box-shadow: 0 20px 60px rgb(0 0 0 / 35%);
+}
+
+h1 {
+  margin: 0 0 8px;
+  color: #f5f9fc;
+  font-size: clamp(1.8rem, 5vw, 2.6rem);
+}
+
+main > p {
+  margin: 0 0 28px;
+  color: #a9bdca;
+}
+
+section {
+  display: grid;
+  gap: 16px;
+}
+
+h2,
+h3 {
+  margin: 12px 0 0;
+}
+
+h2 {
+  color: #42c8f5;
+  font-size: 1.25rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+label {
+  color: #dbe8ef;
+}
+
+input[type="range"] {
+  width: 100%;
+  accent-color: #08a5d1;
+  cursor: pointer;
+}
+
+button {
+  min-height: 46px;
+  padding: 10px 18px;
+  border: 1px solid #168bb0;
+  border-radius: 10px;
+  background: #087ea3;
+  color: white;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0997bf;
+}
+
+button:focus-visible,
+input:focus-visible {
+  outline: 3px solid #ffd166;
+  outline-offset: 3px;
+}
+
+#keypad-stop {
+  border-color: #d65478;
+  background: #a92d50;
+}
+
+#keypad-stop:hover {
+  background: #c23a60;
+}
+
+output {
+  color: #fff;
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+}
+
+#frequency-value {
+  color: #51d5ff;
+}
+
+section > p {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 0;
+  padding: 14px 16px;
+  border: 1px solid #293945;
+  border-radius: 10px;
+  background: #0b1218;
+}
+
+@media (max-width: 520px) {
+  body {
+    padding: 16px 12px;
+  }
+
+  main {
+    padding: 22px 18px;
+  }
+}
+
+.parameter-section {
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid #293945;
+}
+
+.parameter-intro {
+  margin: 0;
+  color: #a9bdca;
+  line-height: 1.6;
+}
+
+.table-wrap {
+  overflow-x: auto;
+  border: 1px solid #293945;
+  border-radius: 10px;
+}
+
+table {
+  width: 100%;
+  min-width: 620px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th,
+td {
+  padding: 12px 14px;
+  border-bottom: 1px solid #293945;
+  vertical-align: top;
+}
+
+th {
+  background: #0b1218;
+  color: #51d5ff;
+}
+
+td {
+  color: #dbe8ef;
+}
+
+tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+tbody tr:nth-child(even) {
+  background: rgb(255 255 255 / 3%);
+}
+
+#terminal-mode {
+  width: 100%;
+  min-height: 46px;
+  padding: 10px 12px;
+  border: 1px solid #168bb0;
+  border-radius: 10px;
+  background: #0b1218;
+  color: #edf4f8;
+  font: inherit;
+}
+
+.terminal-controls {
+  display: grid;
+  gap: 12px;
+}
+
+.terminal-switch {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 52px;
+  padding: 12px 14px;
+  border: 1px solid #293945;
+  border-radius: 10px;
+  background: #0b1218;
+  cursor: pointer;
+}
+
+.terminal-switch input {
+  width: 20px;
+  height: 20px;
+  accent-color: #08a5d1;
+}
+
+#terminal-explanation {
+  margin: 0;
+  color: #a9bdca;
+  line-height: 1.6;
+}
+
+.wiring-section {
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px solid #293945;
+}
+
+.wiring-section figure {
+  margin: 0;
+}
+
+.wiring-section {
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px solid #293945;
+}
+
+.wiring-section figure {
+  margin: 12px 0 24px;
+}
+
+.wiring-section img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #293945;
+  border-radius: 10px;
+  background: white;
+}
+
+.wiring-section figcaption {
+  margin-top: 10px;
+  color: #a9bdca;
+  line-height: 1.6;
+}
+
+.parameter-section td:nth-child(2) {
+  white-space: nowrap;
+}
+
